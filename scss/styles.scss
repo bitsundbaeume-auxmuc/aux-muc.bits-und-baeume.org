@@ -1,0 +1,111 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+// Toggle global options
+$enable-gradients: false;
+$enable-shadows: true;
+
+// Bits und Bäume colors
+$bub-highlight: rgba(161,200,84);
+$bub-highlight-border: #c1d98d;
+$bub-action: rgba(35,60,120);
+$bub-action-hover: #1b1448;
+$bub-action-border: #84adc8;
+
+
+// Override bootstrap defaults
+$primary: $bub-highlight;
+$link-color: $bub-action;
+$lik-color-hover: $bub-action-hover;
+
+$border-radius: 8px;
+
+$btn-box-shadow: none;
+$btn-color: #FFF;
+$btn-border-radius: 3px;
+$btn-padding-x: 1.625rem;
+$btn-padding-y: 0.5rem;
+
+$card-bg: $primary;
+$card-border-width: 0;
+$card-box-shadow: 0 10px 0 $bub-highlight-border;
+$card-spacer-x: 2.125rem;
+$card-spacer-y: 1.625rem;
+
+// Required
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+@import "bootstrap/scss/offcanvas"; // Requires transitions
+// @import "bootstrap/scss/placeholders";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+
+
+//
+// Custom styles
+//
+
+.btn-primary {
+    @include button-variant($bub-action, darken($bub-action, 7.5%), #FFF,  $bub-action-hover, rgba(0,0,0,0), #FFF);
+
+    &:hover {
+        box-shadow: 0 8px 0 $bub-action-border;
+    }
+}
+
+.card {
+    margin-bottom: 10px;
+
+    p a {
+        color: $body-color;
+    }
+}
+
+.page-header {
+    border-bottom: solid 10px $primary;
+}
