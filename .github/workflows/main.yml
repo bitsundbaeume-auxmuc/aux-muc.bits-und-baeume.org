@@ -39,12 +39,12 @@ jobs:
           remote_user: bbauxmuc
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
       
-      - name: matrix-commit
-        uses: s3krit/matrix-message-action@v0.0.3
+      - name: notify-matrix
+        uses: lkiesow/matrix-notification@v1
         with:
-          room_id: ${{ secrets.MATRIX_ROOM_ID }}
-          access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
           server: ${{ secrets.MATRIX_SERVER }}
+          token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
+          room: ${{ secrets.MATRIX_ROOM_ID }}
           message: |
           ${{ github.actor }} created commit:
           Commit message: ${{ github.event.commits[0].message }}
