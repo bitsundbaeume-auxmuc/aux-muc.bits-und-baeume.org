@@ -38,12 +38,19 @@ jobs:
           remote_host: aux-muc.bits-und-baeume.org
           remote_user: bbauxmuc
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: notify      
-        uses: Numericas/matrix-action@v1
+      
+      - name: matrix-commit
+        uses: krazykirby99999/matrix-commit@v1
         with:
-          server: ${{ secrets.MATRIX_SERVER }}
-          room-id: ${{ secrets.MATRIX_ROOM_ID }}
+          homeserver: ${{ secrets.MATRIX_SERVER }}
+          username: ${{ secrets.MATRIX_USERNAME }}
           access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
-          status: ${{ job.status }}
-          message: Integration tests failed
+
+          room_id: ${{ secrets.MATRIX_ROOM_ID }}
+          message: |
+            ${{ github.actor }} created commit:
+            Commit message: ${{ github.event.commits[0].message }}
+            
+            Repository: ${{ github.repository }}
+            
+            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
