@@ -39,17 +39,11 @@ jobs:
           remote_user: bbauxmuc
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: notify
-        id: matrix-chat-message
-        uses: fadenb/matrix-chat-message@v0.0.6
+      - name: notify      
+        uses: Numericas/matrix-action@v1
         with:
-          homeserver: 'noitl.space'
-          token: ${{ secrets.MATRIX_TOKEN }}
-          channel: '!pfaOZ2NtnedgwL0M:noitl.space'
-          message: |
-            ${{ github.actor }} created commit:
-            Commit message: ${{ github.event.commits[0].message }}
-            
-            Repository: ${{ github.repository }}
-            
-            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+          server: ${{ secrets.MATRIX_SERVER }}
+          room-id: ${{ secrets.MATRIX_ROOM_ID }}
+          access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
+          status: ${{ job.status }}
+          message: Integration tests failed
