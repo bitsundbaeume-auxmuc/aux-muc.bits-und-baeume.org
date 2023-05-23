@@ -38,17 +38,3 @@ jobs:
           remote_host: aux-muc.bits-und-baeume.org
           remote_user: bbauxmuc
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
-      
-      - name: notify-matrix
-        uses: lkiesow/matrix-notification@v1
-        with:
-          server: ${{ secrets.MATRIX_SERVER }}
-          token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
-          room: ${{ secrets.MATRIX_ROOM_ID }}
-          message: |
-          ${{ github.actor }} created commit:
-          Commit message: ${{ github.event.commits[0].message }}
-          
-          Repository: ${{ github.repository }}
-          
-          See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
