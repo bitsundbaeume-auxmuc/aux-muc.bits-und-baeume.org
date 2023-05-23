@@ -121,7 +121,7 @@
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-top pt-3">
                 <li class="nav-item">
-                    <a href="https://github.com/bitsundbaeume-auxmuc/aux-muc.bits-und-baeume.org" target="_blank" class="nav-link px-2 text-muted">Github</a>
+                    <a href="https://github.com/bitsundbaeume-auxmuc/aux-muc.bits-und-baeume.org" target="_blank" class="nav-link px-2 text-muted">Github<?php echo "test" ?></a>
                 </li>
             </ul>
         </footer>
