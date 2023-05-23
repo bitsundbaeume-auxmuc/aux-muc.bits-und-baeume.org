@@ -40,17 +40,15 @@ jobs:
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
       
       - name: matrix-commit
-        uses: krazykirby99999/matrix-commit@v1
+        uses: s3krit/matrix-message-action@v0.0.3
         with:
-          homeserver: ${{ secrets.MATRIX_SERVER }}
-          username: ${{ secrets.MATRIX_USERNAME }}
-          access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
-
           room_id: ${{ secrets.MATRIX_ROOM_ID }}
+          access_token: ${{ secrets.MATRIX_ACCESS_TOKEN }}
+          server: ${{ secrets.MATRIX_SERVER }}
           message: |
-            ${{ github.actor }} created commit:
-            Commit message: ${{ github.event.commits[0].message }}
-            
-            Repository: ${{ github.repository }}
-            
-            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+          ${{ github.actor }} created commit:
+          Commit message: ${{ github.event.commits[0].message }}
+          
+          Repository: ${{ github.repository }}
+          
+          See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
