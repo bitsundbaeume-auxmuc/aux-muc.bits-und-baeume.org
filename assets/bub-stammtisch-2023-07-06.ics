@@ -25,9 +25,9 @@ BEGIN:VEVENT
 UID:ics.terminsysteme.de1684784717
 DTSTAMP:20230522T214517
 CLASS:PUBLIC
-DTSTART;TZID=Europe/Berlin:20230607T190000
-DTEND;TZID=Europe/Berlin:20230607T210000
-LOCATION:Ballonfabrik, Austraße 27, 86153 Augsburg
+DTSTART;TZID=Europe/Berlin:20230706T190000
+DTEND;TZID=Europe/Berlin:20230706T210000
+LOCATION:München
 SUMMARY:Bits & Bäume Stammtisch aux-muc
 DESCRIPTION:Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren. Hier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.
 BEGIN:VALARM
