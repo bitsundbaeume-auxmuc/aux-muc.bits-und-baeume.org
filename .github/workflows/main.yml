@@ -47,7 +47,7 @@ jobs:
       - name: upload
         uses: burnett01/rsync-deployments@5.2
         with:
-          switches: -avzr --delete --exclude="node_modules" --exclude '.git' --exclude 'cache' --exclude 'var'
+          switches: -avzr --delete --exclude="node_modules" --exclude '.git' --exclude 'cache' --exclude 'var' --exclude '.env.local'
           path: ./
           remote_path: /var/www/virtual/bbauxmuc/website/
           remote_host: aux-muc.bits-und-baeume.org
