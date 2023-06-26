@@ -1,0 +1,47 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "@id": "2",
+    "name": "Bits & Bäume Stammtisch aux-muc",
+    "description": "Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren.\nHier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.",
+    "startDate": "2023-07-06T19:00",
+    "endDate": "2023-07-06T21:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "München"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bits & Bäume aux-muc",
+      "url": "https://aux-muc.bits-und-baeume.org"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "@id": "1",
+    "name": "Bits & Bäume Stammtisch aux-muc",
+    "description": "Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren.\nHier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.",
+    "startDate": "2023-06-07T19:00",
+    "endDate": "2023-06-07T21:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Ballonfabrik",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Austraße 27",
+        "addressLocality": "Augsburg",
+        "postalCode": "86153",
+        "addressCountry": "DE"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bits & Bäume aux-muc",
+      "url": "https://aux-muc.bits-und-baeume.org"
+    }
+  }
+]

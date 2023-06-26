@@ -43,6 +43,7 @@ $card-spacer-y: 1.625rem;
 // Required
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
@@ -91,21 +92,21 @@ $card-spacer-y: 1.625rem;
 //
 
 .btn-primary {
-    @include button-variant($bub-action, darken($bub-action, 7.5%), #FFF,  $bub-action-hover, rgba(0,0,0,0), #FFF);
+  @include button-variant($bub-action, darken($bub-action, 7.5%), #FFF,  $bub-action-hover, rgba(0,0,0,0), #FFF);
 
-    &:hover {
-        box-shadow: 0 8px 0 $bub-action-border;
-    }
+  &:hover {
+    box-shadow: 0 8px 0 $bub-action-border;
+  }
 }
 
 .card {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    p a {
-        color: $body-color;
-    }
+  p a {
+    color: $body-color;
+  }
 }
 
 .page-header {
-    border-bottom: solid 10px $primary;
+  border-bottom: solid 10px $primary;
 }

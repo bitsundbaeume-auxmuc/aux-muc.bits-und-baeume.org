@@ -1,0 +1,13 @@
+name: bits-und-baeume-aux-muc
+recipe: lamp
+config:
+  webroot: public
+  php: '8.1'
+services:
+  node:
+    type: node:18
+tooling:
+  npm:
+    service: node
+  node:
+    service: node

@@ -9,14 +9,29 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
       - uses: actions/checkout@v2
+      - name: Cache Composer packages
+        id: composer-cache
+        uses: actions/cache@v2
+        with:
+          path: vendor
+          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-php-
+      - name: Install Dependencies
+        run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2
         with:
           node-version: '18'
           cache: 'npm'
           cache-dependency-path: 'package-lock.json'
-      - uses: actions/cache@v2
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -32,9 +47,18 @@ jobs:
       - name: upload
         uses: burnett01/rsync-deployments@5.2
         with:
-          switches: -avzr --delete --exclude="node_modules" --exclude=".*" --exclude="package*" --exclude="README.md"
+          switches: -avzr --delete --exclude="node_modules" --exclude '.git' --exclude 'cache'
           path: ./
           remote_path: /home/bbauxmuc/html/
           remote_host: aux-muc.bits-und-baeume.org
           remote_user: bbauxmuc
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: executing post upload actions via ssh
+        uses: appleboy/ssh-action@master
+        with:
+          host: aux-muc.bits-und-baeume.org
+          username: bbauxmuc
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: cd /home/bbauxmuc/html/ && php bin/console cache:clear

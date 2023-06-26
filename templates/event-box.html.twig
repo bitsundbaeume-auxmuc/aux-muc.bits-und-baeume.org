@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Nächstes Treffen:</h4>
+        <h5 class="card-subtitle mb-2 text-body-secondary">{{ event.name }}<br>
+            am {{ event.startDate|format_datetime(pattern='d. MMMM y', locale='de') }}
+            um {{ event.startDate|format_datetime(pattern='HH:mm', locale='de') }} Uhr</h5>
+        <p class="card-text">
+            Ort: {{ event.location.name }} {% if event.location.address is defined %}({{ event.location.address.streetAddress }}, {{ event.location.address.postalCode }} {{ event.location.address.addressLocality }}){% endif %}</p>
+        {% set descriptionParagraphs = event.description | split('\n') %}
+        {% for paragraph in descriptionParagraphs %}
+        <p class="card-text">{{ paragraph }}</p>
+        {% endfor %}
+
+        <a href="ics/{{ attribute(event, '@id') | url_encode }}" class="btn btn-primary">Zum Kalender hinzufügen</a>
+    </div>
+    <script type="application/ld+json">{{ event | json_encode | raw }}</script>
+</div>

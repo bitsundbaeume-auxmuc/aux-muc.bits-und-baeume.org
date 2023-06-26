@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Bits &amp; Bäume | Augsburg - München | Die Bewegung für Digitalisierung und Nachhaltigkeit{% endblock %}</title>
+    <meta name="description"
+          content="Regionaler Zweig der Bits &amp; Bäume Bewegung für Digitalisierung und Nachhaltigkeit in der Region Augsburg - München">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('build/images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('build/images/favicon-16x16.png') }}">
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</head>
+<body>
+{% include '_header.html.twig' %}
+{% block content %}{% endblock %}
+{% include '_footer.html.twig' %}
+</body>
+</html>

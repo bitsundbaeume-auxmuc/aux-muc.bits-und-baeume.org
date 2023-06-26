@@ -1,0 +1,51 @@
+{% extends '_base.html.twig' %}
+
+{% block content %}
+    <div class="container">
+        <h1>Wir sind Bits & Bäume <span class="text-secondary">-&nbsp;Augsburg&nbsp;München</span></h1>
+        <h2 class="display-6">Nachhaltigkeit & Digitalisierung</h2>
+    </div>
+
+    <div class="container mx-auto py-4">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Was ist Bits & Bäume?</h4>
+                        <p class="card-text">Alle Infos über die Bewegung für Digitalisierung und Nachhaltigkeit
+                            findest du auf:</p>
+                        <a href="https://bits-und-baeume.org" target="_blank"
+                           class="btn btn-primary">bits-und-baeume.org</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                {% include 'event-box.html.twig' with {event: events.0, eventKey: 0} %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Bleib auf dem Laufenden</h2>
+        <p>Es gibt verschiedenste Möglichkeiten mit uns in Kontakt zu treten:</p>
+        <ul class="list-group">
+            <li class="list-group-item">Folge uns auf <strong>Mastodon</strong>: <strong><a
+                            href="https://augsburg.social/@BitsUndBaeumeAuxMuc" target="_blank" rel="me">@BitsUndBaeumeAuxMuc@augsburg.social</a></strong><br>
+                Mastodon ist ein dezentrales Soziales Netzwerk. Man kann es so ähnlich wie Twitter benutzen. <a
+                        href="https://joinmastodon.org" target="_blank" class="text-body">Mehr Infos</a>.
+            </li>
+
+            <li class="list-group-item"><strong>Matrix</strong>-Chat: <strong><a
+                            href="https://matrix.to/#/#bitsundbaeumeauxmuc:matrix.org" target="_blank">#bitsundbaeumeauxmuc:matrix.org</a></strong><br>
+                Matrix ist ein Open Source Kommunikationsprotokoll. Man kann es so ähnlich wie Discord benutzen. <a
+                        href="https://matrix.org/docs/projects/try-matrix-now" target="_blank" class="text-body">Weitere
+                    Infos</a>.
+            </li>
+
+            <li class="list-group-item">Kontaktiere uns per <strong>E-Mail</strong>: <strong><a
+                            href="mailto:kontakt@aux-muc.bits-und-baeume.org">kontakt@aux-muc.bits-und-baeume.org</a></strong><br>
+                E-Mail ist ein offener Standard für Nachrichenaustausch. Man kann sie so ähnlich wie Briefe benutzen ;-)
+            </li>
+        </ul>
+    </div>
+{% endblock %}
