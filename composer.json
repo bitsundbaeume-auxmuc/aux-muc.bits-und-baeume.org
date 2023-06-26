@@ -1,7 +1,7 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "php": ">=8.1",
@@ -12,6 +12,7 @@
         "doctrine/orm": "^2.15",
         "eluceo/ical": "^2.12",
         "knplabs/knp-menu-bundle": "^3.2",
+        "meet-kinksters/php-matrix-sdk": "1.0.x-dev",
         "phpdocumentor/reflection-docblock": "^5.3",
         "phpstan/phpdoc-parser": "^1.22",
         "sensio/framework-extra-bundle": "^6.2",
