@@ -24,6 +24,8 @@ class NotifyService
         foreach ($events as $event) {
             $this->sendNotificationToMatrix($event);
         }
+
+        return $events;
     }
 
     protected function getEventsToNotify() {

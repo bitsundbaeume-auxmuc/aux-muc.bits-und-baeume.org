@@ -24,8 +24,8 @@ class CronController extends AbstractController
     public function notifyEvents(Request $request)
     {
         $this->checkKey($request);
-        $this->notifyService->notify();
-        return new Response('OK');
+        $notifiedEvents = $this->notifyService->notify();
+        return new Response('Benachrichtigung für ' . count($notifiedEvents) . ' Event(s) wurden gesendet.');
     }
 
     protected function checkKey(Request $request) {
