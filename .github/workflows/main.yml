@@ -49,7 +49,7 @@ jobs:
         with:
           switches: -avzr --delete --exclude="node_modules" --exclude '.git' --exclude 'cache'
           path: ./
-          remote_path: /home/bbauxmuc/html/
+          remote_path: /home/bbauxmuc/website/
           remote_host: aux-muc.bits-und-baeume.org
           remote_user: bbauxmuc
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -61,4 +61,4 @@ jobs:
           username: bbauxmuc
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          script: cd /home/bbauxmuc/html/ && php bin/console cache:clear
+          script: cd /home/bbauxmuc/website/ && php bin/console cache:clear
