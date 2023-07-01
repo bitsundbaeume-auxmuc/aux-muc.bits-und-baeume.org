@@ -1,4 +1,4 @@
-# ebsite für Bits & Bäume | Augsburg München
+ ebsite für Bits & Bäume | Augsburg München
 
 Basierend auf Symfony 6 und Bootstrap
 
