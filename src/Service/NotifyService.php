@@ -39,7 +39,7 @@ class NotifyService
            }
 
            $difference = $startDate->diff($now);
-           if ($difference->days == 7 || $difference->days == 0) {
+           if ($difference->days == 8 || $difference->days == 1) {
                return true;
            }
 
