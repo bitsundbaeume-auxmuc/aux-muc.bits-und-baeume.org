@@ -1,4 +1,4 @@
- ebsite für Bits & Bäume | Augsburg München
+ebsite für Bits & Bäume | Augsburg München
 
 Basierend auf Symfony 6 und Bootstrap
 
@@ -12,6 +12,10 @@ Basierend auf Symfony 6 und Bootstrap
 
 ## Wichtige Verzeichnisse + Dateien
 
+- `.env`: Enthält alle Umgebungsvariablen die gesetzt werden müssen, damit die Website läuft. Am besten
+  eine `.env.local` erstellen und in dieser Datei andere Werte eintragen. Die `.env.local` überschreibt die
+  normale `.env` Datei und wird auch nicht committed. Alternativ können die Umgebungsvariablen auch ganz normal ohne
+  Datei gesetzt werden (bei Docker zum Beispiel).
 - `assets`: Enthält CSS und Javascript für diese Website. Es wird automatisch kompiliert und landet dann im `public`
   Verzeichnis.
 - `templates`: Enthält die Twig templates aus denen das HTML generiert wird.
