@@ -5,8 +5,8 @@
     "@id": "2",
     "name": "Bits & Bäume Stammtisch aux-muc",
     "description": "Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren.\nHier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.",
-    "startDate": "2023-07-11T19:00",
-    "endDate": "2023-07-11T21:00",
+    "startDate": "2023-07-12T19:00",
+    "endDate": "2023-07-12T21:00",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
