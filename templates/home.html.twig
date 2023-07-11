@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                {% include 'event-box.html.twig' with {event: events.0, eventKey: 0} %}
+                {% include 'event-box.html.twig' with {event: nextEvent} %}
             </div>
         </div>
     </div>
@@ -45,6 +45,14 @@
             <li class="list-group-item">Kontaktiere uns per <strong>E-Mail</strong>: <strong><a
                             href="mailto:kontakt@aux-muc.bits-und-baeume.org">kontakt@aux-muc.bits-und-baeume.org</a></strong><br>
                 E-Mail ist ein offener Standard für Nachrichenaustausch. Man kann sie so ähnlich wie Briefe benutzen ;-)
+            </li>
+
+            <li class="list-group-item">
+                Abonniere unsere <strong>Mailinglisten</strong>: <strong><a
+                            href="https://lists.c3a.de/listinfo/bb-neuigkeiten"
+                            target="_blank">bb-neuigkeiten</a></strong> und <strong><a
+                            href="https://lists.c3a.de/listinfo/bb-aktivisten"
+                            target="_blank">bb-aktivisten</a></strong>
             </li>
         </ul>
     </div>

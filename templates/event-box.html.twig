@@ -1,6 +1,7 @@
 <div class="card">
     <div class="card-body">
         <h4 class="card-title">Nächstes Treffen:</h4>
+        {% if event %}
         <h5 class="card-subtitle mb-2 text-body-secondary">{{ event.name }}<br>
             am {{ event.startDate|format_datetime(pattern='d. MMMM y', locale='de') }}
             um {{ event.startDate|format_datetime(pattern='HH:mm', locale='de') }} Uhr</h5>
@@ -12,6 +13,12 @@
         {% endfor %}
 
         <a href="ics/{{ attribute(event, '@id') | url_encode }}" class="btn btn-primary">Zum Kalender hinzufügen</a>
+        {% else %}
+            <p>Im Moment ist noch kein neues Treffen geplant.</p>
+            <p>Sobald es einen Termin gibt, erfährst du es hier.</p>
+        {% endif %}
     </div>
+    {% if event %}
     <script type="application/ld+json">{{ event | json_encode | raw }}</script>
+    {% endif %}
 </div>

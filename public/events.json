@@ -2,6 +2,122 @@
   {
     "@context": "https://schema.org",
     "@type": "Event",
+    "@id": "7",
+    "name": "Bits & Bäume Stammtisch aux-muc",
+    "description": "Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren.\nHier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.",
+    "startDate": "2023-12-06T19:00",
+    "endDate": "2023-12-06T21:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "OpenLab Augsburg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bäckergasse 32",
+        "addressLocality": "Augsburg",
+        "postalCode": "86150",
+        "addressCountry": "DE"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bits & Bäume aux-muc",
+      "url": "https://aux-muc.bits-und-baeume.org"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "@id": "6",
+    "name": "Bits & Bäume Stammtisch aux-muc",
+    "description": "Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren.\nHier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.",
+    "startDate": "2023-11-07T19:00",
+    "endDate": "2023-11-07T21:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "München"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bits & Bäume aux-muc",
+      "url": "https://aux-muc.bits-und-baeume.org"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "@id": "5",
+    "name": "Bits & Bäume Stammtisch aux-muc",
+    "description": "Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren.\nHier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.",
+    "startDate": "2023-10-04T19:00",
+    "endDate": "2023-10-04T21:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "OpenLab Augsburg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bäckergasse 32",
+        "addressLocality": "Augsburg",
+        "postalCode": "86150",
+        "addressCountry": "DE"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bits & Bäume aux-muc",
+      "url": "https://aux-muc.bits-und-baeume.org"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "@id": "4",
+    "name": "Bits & Bäume Stammtisch aux-muc",
+    "description": "Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren.\nHier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.",
+    "startDate": "2023-09-05T19:00",
+    "endDate": "2023-09-05T21:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "München"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bits & Bäume aux-muc",
+      "url": "https://aux-muc.bits-und-baeume.org"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "@id": "3",
+    "name": "Bits & Bäume Stammtisch aux-muc",
+    "description": "Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren.\nHier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.",
+    "startDate": "2023-08-02T19:00",
+    "endDate": "2023-08-02T21:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Ballonfabrik",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Austraße 27",
+        "addressLocality": "Augsburg",
+        "postalCode": "86153",
+        "addressCountry": "DE"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bits & Bäume aux-muc",
+      "url": "https://aux-muc.bits-und-baeume.org"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
     "@id": "2",
     "name": "Bits & Bäume Stammtisch aux-muc",
     "description": "Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren.\nHier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.",
