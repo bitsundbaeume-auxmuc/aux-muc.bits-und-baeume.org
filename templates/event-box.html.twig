@@ -33,10 +33,11 @@
 
     <div class="card-body">
         <h5 class="card-subtitle mb-2 text-body-secondary">Weitere Termine</h5>
-        <ul>
+        <ul class="list-unstyled">
             {% for event in events %}
-            <li>
-                {{ event.startDate|format_datetime(pattern='dd.MM.y', locale='de') }}, {{ event.startDate|format_datetime(pattern='HH:mm', locale='de') }} Uhr, {{ event.location.name }}
+                <li class="mb-1">
+                    <a href="ics/{{ attribute(event, '@id') | url_encode }}" title="Zum Kalender hinzufügen" class="me-1"><i class="bi-calendar-plus"></i></a>
+                    {{ event.startDate|format_datetime(pattern='dd.MM.y', locale='de') }}, {{ event.startDate|format_datetime(pattern='HH:mm', locale='de') }} Uhr, {{ event.location.name }}
                 <script type="application/ld+json">{{ event | json_encode | raw }}</script>
             </li>
             {% endfor %}

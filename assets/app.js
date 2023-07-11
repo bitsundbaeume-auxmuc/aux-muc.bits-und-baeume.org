@@ -6,5 +6,6 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
+require('bootstrap-icons/font/bootstrap-icons.min.css');
 import './styles/app.scss';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
