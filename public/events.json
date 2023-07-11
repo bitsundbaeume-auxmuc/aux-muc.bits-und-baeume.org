@@ -10,12 +10,12 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Ballonfabrik",
+      "name": "OpenLab Augsburg",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Austraße 27",
+        "streetAddress": "Bäckergasse 32",
         "addressLocality": "Augsburg",
-        "postalCode": "86153",
+        "postalCode": "86150",
         "addressCountry": "DE"
       }
     },
