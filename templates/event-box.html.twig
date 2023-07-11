@@ -28,6 +28,7 @@
     <script type="application/ld+json">{{ event | json_encode | raw }}</script>
     {% endif %}
 
+    {% if events|length > 0 %}
     <hr class="mt-0 mb-0">
 
     <div class="card-body">
@@ -41,4 +42,5 @@
             {% endfor %}
         </ul>
     </div>
+    {% endif %}
 </div>
