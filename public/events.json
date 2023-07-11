@@ -100,7 +100,7 @@
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "Ballonfabrik",
+      "name": "Ballonfabrik Augsburg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Austraße 27",

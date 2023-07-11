@@ -20,9 +20,9 @@ class HomeController extends AbstractController
     #[Route('/', name: 'homepage', options: ['_menu' => 'main', '_menu_title' => 'Home'])]
     public function index(): Response
     {
-        $nextEvent = $this->eventService->getNextEvent();
+        $nextEvents = $this->eventService->getNextEvents();
         return $this->render('home.html.twig', [
-            'nextEvent' => $nextEvent,
+            'events' => $nextEvents,
         ]);
     }
 }

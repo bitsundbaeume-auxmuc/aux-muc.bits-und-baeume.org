@@ -28,7 +28,7 @@ class EventService
         }
     }
 
-    public function getNextEvent() : ?\stdClass
+    public function getNextEvents() : array
     {
         $events = $this->getAllEvents();
 
@@ -40,11 +40,7 @@ class EventService
             return strtotime($a->startDate) - strtotime($b->startDate);
         });
 
-        if (count($events) > 0) {
-            return $events[0];
-        } else {
-            return NULL;
-        }
+        return $events;
     }
 
     public function getById(string $id): \stdClass
