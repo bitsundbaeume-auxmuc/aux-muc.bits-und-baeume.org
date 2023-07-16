@@ -1,4 +1,4 @@
-ebsite für Bits & Bäume | Augsburg München
+Website für Bits & Bäume | Augsburg München
 
 Basierend auf Symfony 6 und Bootstrap
 
