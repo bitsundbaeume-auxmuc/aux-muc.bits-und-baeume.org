@@ -31,12 +31,19 @@
     "@id": "6",
     "name": "Bits & Bäume Stammtisch aux-muc",
     "description": "Die Stammtische dienen als offener Aktiventreff für alle, die sich für die Themen von Bits & Bäume interessieren.\nHier kannst du dich über aktuelle Entwicklungen austauschen und eigene Ideen für Aktionen einbringen. Jede:r ist herzlich willkommen, unabhängig von Vorkenntnissen oder Erfahrungen.",
-    "startDate": "2023-11-07T19:00",
-    "endDate": "2023-11-07T21:00",
+    "startDate": "2023-11-01T19:00",
+    "endDate": "2023-11-01T21:00",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
-      "name": "München"
+      "name": "Chaos Computer Club München e.V.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Heßstr. 90",
+        "addressLocality": "München",
+        "postalCode": "80797",
+        "addressCountry": "DE"
+      }
     },
     "organizer": {
       "@type": "Organization",
